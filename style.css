@@ -1,0 +1,209 @@
+
+html,
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background: url(background.jpg);
+background-size: cover;
+background-position: center;
+
+}
+#header{
+    font-weight: bolder;
+    font-size: 50px;
+    color: wheat;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);;
+  }
+  
+  .modal-content {
+    background-color: #f9f9f9;
+  background-image: linear-gradient(to bottom, #f9f9f9, #e9e9e9);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-content form {
+    /* Add styles for the form */
+    margin-top: 20px;
+  }
+  
+  .modal-content form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .modal-content form input[type="text"],
+  .modal-content form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .modal-content form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .modal-content form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+
+  .modal-content {
+    animation-name: modalFade;
+    animation-duration: 0.3s;
+  }
+  
+  @keyframes modalFade {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .toggle-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-button {
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ccc;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-button::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-label {
+    margin-left: 10px;
+  }
+  .toggle-button.right {
+    background-color: #00cc66;
+  }
+  
+  .toggle-button.right::before {
+    transform: translateX(20px);
+  }
+  
+  .toggle-button.left {
+    background-color: #ff4d4d;
+  }
+  
+  .toggle-button.left::before {
+    transform: translateX(2px);
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+  
+  td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+  }
+  
+  th {
+    background-color: rgb(235,235,235);
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: rgb(250,250,250);
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+  }
+  
+  caption {
+    padding: 10px;
+  }
+
+
+  .buttonss{
+    display: flex;
+    justify-content: center;
+    padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  }
+
+  .buttonss:hover{
+    background-color: #0056b3;
+  }

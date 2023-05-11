@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+    <div> 
+        <h1 id="header">Chidi's Library</h1>
+    </div>
+    
+    <div class="buttonss">
+    <button id="openModalBtn">New Book</button>
+</div>
+    <table id="bookTable">
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+            <th>Delete</th>
+        
+        
+          </tr>
+        </thead>
+        <tbody id="bookTableBody"></tbody>
+      </table>
+
+<!-- Modal form -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Add Book to Catalogue</h2>
+    <form id="myForm">
+        <div class="title-side">
+            <div>
+                <label for="title">Title:</label>
+            </div>
+            <p>
+                <input type="text" id="title" name="name" required>
+            </p>
+        </div>
+
+        <div class="author-side">
+            <div>
+                <label for="author">Author:</label>
+            </div>
+            <p>
+                <input type="text" id="author" name="name" required>
+            </p>
+        </div>
+
+            <div class="pages">
+                <div>
+                    <label for="pages">pages:</label>
+                </div>
+                <p>
+                    <input type="number" id="pages" name="name" required>
+                </p>
+            </div>
+
+            <p>
+                <div class="toggle-container">
+                    <button id="toggleBtn" class="toggle-button"></button>
+                    <span id="toggleLabel" class="toggle-label">Not Read</span>
+                  </div>
+            </p>
+
+        
+
+
+      <button type="submit" id="submit-book">Submit</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
